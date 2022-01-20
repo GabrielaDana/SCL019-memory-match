@@ -23,4 +23,12 @@ const App = () => {
   return el;
 };
 
+// const setCards = () => {
+//   const cards = document.createElement("div");
+
+//   cards.className = "carta";
+
+//   return cards;
+// };
+// export default setCards;
 export default App;
