@@ -22,6 +22,10 @@
 
 //   return el;
 // };
+<<<<<<< HEAD
+// export default setCards;
+export default App;
+=======
 
 const setCards = () => {
   const cards = document.createElement("div");
@@ -31,3 +35,4 @@ const setCards = () => {
 };
 export default setCards;
 // export default App;
+>>>>>>> f79d4eff16bed9725a311f1b4ef27e9ed3e91eda
