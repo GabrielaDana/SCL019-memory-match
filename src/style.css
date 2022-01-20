@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .carta {
+    background-image: url("images/pokeball.png");
+    background-size: contain;
     height: 160px;
     width: 160px;
-    background-image: url("pokeball.png");
 }
-.App {
+/* .App {
     text-align: center;
-}
+} */

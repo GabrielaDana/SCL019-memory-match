@@ -14,21 +14,20 @@
 //   .catch(console.error);
 //
 
-const App = () => {
-  const el = document.createElement('div');
+// const App = () => {
+//   const el = document.createElement('div');
 
-  el.className = 'App';
-  el.textContent = 'Hola mundo!';
+//   el.className = 'App';
+//   el.textContent = 'Hola mundo!';
 
-  return el;
-};
-
-// const setCards = () => {
-//   const cards = document.createElement("div");
-
-//   cards.className = "carta";
-
-//   return cards;
+//   return el;
 // };
-// export default setCards;
-export default App;
+
+const setCards = () => {
+  const cards = document.createElement("div");
+
+  cards.className = "carta";
+  return cards;
+};
+export default setCards;
+// export default App;
