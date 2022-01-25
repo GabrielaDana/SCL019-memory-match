@@ -25,12 +25,11 @@ const App = () => {
   cardFront.className = "cardFront";
   cardInner.appendChild(cardFront);
 
-  // const cardImage = document.createElement("img");
-  // cardImage.alt = "pokeball";
-  // cardImage.className = "image";
-  // cardImage.src = "./images/pokeball.png"
-  // cardImage.style = "widht:160px; height:160px;"
-  // cardFront.appendChild(cardImage);
+  const cardImage = document.createElement("img");
+  cardImage.alt = "pokeball";
+  cardImage.className = "image";
+  cardImage.src = "./images/pokeball.png";
+  cardFront.appendChild(cardImage);
 
   const cardBack = document.createElement("div");
   cardBack.className = "cardBack";
