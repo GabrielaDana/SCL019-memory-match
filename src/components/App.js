@@ -13,21 +13,29 @@
 //   .then(console.log)
 //   .catch(console.error);
 //
+const App = () => {
+  const card = document.createElement("div");
+  card.className = "card";
 
-// const App = () => {
-//   const el = document.createElement('div');
+  const cardInner = document.createElement("div");
+  cardInner.className = "cardInner";
+  card.appendChild(cardInner);
 
-//   el.className = 'App';
-//   el.textContent = 'Hola mundo!';
+  const cardFront = document.createElement("div");
+  cardFront.className = "cardFront";
+  cardInner.appendChild(cardFront);
 
-//   return el;
-// };
+  // const cardImage = document.createElement("img");
+  // cardImage.alt = "pokeball";
+  // cardImage.className = "image";
+  // cardImage.src = "./images/pokeball.png"
+  // cardImage.style = "widht:160px; height:160px;"
+  // cardFront.appendChild(cardImage);
 
-const setCards = () => {
-  const cards = document.createElement("div");
-
-  cards.className = "carta";
-  return cards;
+  const cardBack = document.createElement("div");
+  cardBack.className = "cardBack";
+  cardBack.textContent = "Atrás";
+  cardInner.appendChild(cardBack);
+  return card;
 };
-export default setCards;
-// export default App;
+export default App;
