@@ -8,25 +8,34 @@
     text-align: center;
     font-family: "Press Start 2P";
 } */
+/*Para trabajar con grillas */
+.board {
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px; 
+    grid-template-rows: minmax(165px, auto);
+}
 .card {
+    position: relative;
     background-color: transparent;
     width: 160px;
     height: 160px;
     /* border: 1px solid #943333; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
- } 
-.cardInner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+} 
+
+/* hacer una clase y agregarla al click, o cambiar style con el click */
+.cardFlip {
     position: relative;
     width: 160px;
     height: 160px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-/* hacer una clase y agregarla al click, o cambiar style con el click */
-.card:hover  .cardInner {
     transform: rotateY(180deg);   
 }
+
 
 .cardFront, .cardBack {
     position: absolute;
@@ -52,12 +61,12 @@
     background-color: #994851;
     color: white;
     transform: rotateY(180deg);
+    padding: 1px;
 }
 
 .image {
     width:160px; 
     height:160px; 
     border-radius:50%;
-    border-color: black;
-    border-inline-width: 3px;
+    padding: 1px;
 }
