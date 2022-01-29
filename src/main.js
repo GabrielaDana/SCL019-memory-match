@@ -5,6 +5,6 @@ document.getElementById("root").appendChild(App());
 
 
 function flip(){
-document.querySelector(".card").className += "Flip";
+document.getElementsByClassName("card").className += "Flip";
 };
-document.querySelector(".image").addEventListener("click", flip);
+document.getElementsByClassName("image").addEventListener("click", flip);

@@ -15,40 +15,41 @@ console.log(pokemon);
 //
 const App = () => {
   //
-  let poke = pokemon.items;
+  const poke = pokemon.items;
+  const doublepoke = poke.concat(poke);
   //Primer div creado, padre de los siguientes, necesita return para aparecer dentro de root
   const board = document.createElement("div");
   board.className = "board";
 
-  poke.forEach(function(index, element){
+  doublepoke.forEach(function(index, element){
     const card = document.createElement("div");
     card.className = "card";
     board.appendChild(card);
-    console.log("entramos a div card");
  
-  const cardFront = document.createElement("div");
-  cardFront.className = "cardFront";
-  card.appendChild(cardFront);
+    const cardFront = document.createElement("div");
+    cardFront.className = "cardFront";
+    card.appendChild(cardFront);
 
-  const cardImage = document.createElement("img");
-  cardImage.alt = "pokeball";
-  cardImage.className = "image";
-  cardImage.src = "./images/pokeball.png";
-  cardFront.appendChild(cardImage);
+    const cardImage = document.createElement("img");
+    cardImage.alt = "pokeball";
+    cardImage.className = "image";
+    cardImage.src = "./images/pokeball.png";
+    cardFront.appendChild(cardImage);
 
-  const cardBack = document.createElement("div");
-  cardBack.className = "cardBack";
-  card.appendChild(cardBack);
+    const cardBack = document.createElement("div");
+    cardBack.className = "cardBack";
+    card.appendChild(cardBack);
   
-  poke.forEach(function(element, index){
-    const backImage = document.createElement("img");
-    backImage.src = poke[index].image;
-    cardBack.appendChild(backImage);
-    // console.log(poke.image);
-  });
+  // console.log(doublepoke[items].image);
+    for (let i = 0; i < doublepoke.length; i++){
+      const backImage = document.createElement("img");
+      backImage.src = doublepoke[i].image;
+      backImage.id = doublepoke[i].id;
+      cardBack.appendChild(backImage);
+    }; 
 
-});
- 
+  });
+  
   //Return para que muestre el div como padre y aparezca en el html
   return board;
 };

@@ -8,18 +8,102 @@
     text-align: center;
     font-family: "Press Start 2P";
 } */
+body{
+    margin: 0%;
+}
+h1 {
+    width: 340px;
+    height: 100px;
+    Top: 33px;
+    Left: 35px;
+    margin: 0%;
+    position: absolute;
+    background-image: url(./images/pokebola-pixel.png);
+    background-position-x: 45px;
+    background-position-y: 43px;
+    background-repeat: no-repeat;
+    font-family: "press start 2P";
+    font-size: 48px;
+    text-align: right;
+    color: #F0F42A;
+    -webkit-text-stroke: 1px #3C56B0;
+    text-shadow: -5px -4px 0px #3C56B0;
+    z-index: 1;
+}
+.boton{
+    position: absolute;
+    margin-top: -80px;
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    background: #994851;
+    border: 2px solid #84343D;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.circulo {
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    background: #994851;
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: -2;
+}
+.circulo2 {
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    background: #994851;
+}
+.barra {
+    margin: 0%;
+    height: 179px;
+    top: 0%;
+    left: 0px;
+    right: 0px;
+    bottom: 845px;  
+    background-color: #994851;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
 /*Para trabajar con grillas */
 .board {
+    position: absolute;
+    width: 1125px;
+    height: 589px;
+    left: 266px;
+    top: 304px;
+    border-radius: 29px;
     display: grid;
+    background: rgba(91, 117, 172, 0.5);
     grid-template-columns: 180px 180px 180px 180px 180px 180px; 
     grid-template-rows: minmax(165px, auto);
+    flex-wrap: wrap;
 }
+
 .card {
     position: relative;
     background-color: transparent;
     width: 160px;
     height: 160px;
-    /* border: 1px solid #943333; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -69,4 +153,5 @@
     height:160px; 
     border-radius:50%;
     padding: 1px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
