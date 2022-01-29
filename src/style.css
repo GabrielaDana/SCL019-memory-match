@@ -9,27 +9,109 @@
     font-family: "Press Start 2P";
 } */
 /*Para trabajar con grillas */
+.circulo2{
+    position: absolute;
+    border-radius: 50%;
+    background: #994851;
+    width: 150px;
+    height: 150px;
+    left: 680px;
+    top: 35px;
+    border: 2px solid #84343D;
+    box-sizing: border-box;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#menu{
+    position: relative;
+    background: #994851;
+    max-width: 2000px;
+    padding: 3.8em;    
+}
+
+.circulo{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #994851;
+    height: 200px;
+    width: 200px;
+    left: 652px;
+    top: 15px;
+}
+
+
+#logo{
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    max-width: 400px;
+}
+
+#btnStart{
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    left: 700px;
+    top: 38px;
+    cursor: pointer;
+}
+
+#btnHome{
+    position: absolute;
+    width: 111px;
+    height: 140px;
+    left: 1290px;
+    top: 20px;
+
+    max-width: 80px;
+    max-height:100px;
+    cursor: pointer;
+}
+#btnInstructions{
+    position: absolute;
+    width: 120px;
+    height: 110px;
+    left: 1390px;
+    top: 20px;
+
+    max-width: 110px;
+    max-height:100px;
+    cursor: pointer;
+}
+
+
+body{
+    background-image: url("/images/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0px;
+}
+
+
 .board {
     display: grid;
     grid-template-columns: 180px 180px 180px 180px 180px 180px; 
     grid-template-rows: minmax(165px, auto);
 }
+
 .card {
     position: relative;
-    background-color: transparent;
-    width: 160px;
-    height: 160px;
-    /* border: 1px solid #943333; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    width: 110px;
+    height: 110px;
+    text-align: center;
     transition: transform 0.8s;
-    transform-style: preserve-3d;
+    top: 130px;
+    left: 430px;
+    cursor: pointer;
 } 
 
 /* hacer una clase y agregarla al click, o cambiar style con el click */
 .cardFlip {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 110px;
+    height: 110px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -39,24 +121,17 @@
 
 .cardFront, .cardBack {
     position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 110px;
+    height: 110px;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden; 
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-/* .cardFront {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-color: #bbb;
-     color: black;
-} */
 
 .cardBack {
-    width: 160px;
-    height: 160px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: #994851;
     color: white;
@@ -65,8 +140,20 @@
 }
 
 .image {
-    width:160px; 
-    height:160px; 
+    width:110px; 
+    height:110px; 
     border-radius:50%;
     padding: 1px;
+}
+
+.rectangulo{
+    position: absolute;
+    width: 450px;
+    height: 1100px;
+    top: -100px;
+    left: 700px; 
+    background: rgba(91, 117, 172, 0.5);
+    border-radius: 25px;
+    transform: rotate(90deg);
+
 }
