@@ -39,6 +39,7 @@ const App = () => {
 
   
     const backImage = document.createElement("img");
+    backImage.className = "pkmn";
     backImage.src = doublepoke[i].image;
     backImage.id = doublepoke[i].id;
     cardBack.appendChild(backImage);
