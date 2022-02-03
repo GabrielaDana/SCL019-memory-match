@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.boton{
+    background-image: url("images/start.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    margin-top: -80px;
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    border: 2px solid #84343D;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+} 
+.circulo {
+    margin-top: -3em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 18em;
+    height: 9em;       
+    border-bottom-right-radius: 18em;
+    border-bottom-left-radius: 18em;
+    background: #994851;
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: -2;
+} 
+.circulo2 {
+
+    margin-top: -3em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 18em;
+    height: 9em;       
+    border-bottom-right-radius: 18em;
+    border-bottom-left-radius: 18em;
+    background: #994851;
+    
+} 
+.barra {
+    height: 12em; 
+    background-color: #994851;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+} 
+
+#logo{
+    width: 19em;
+    position: absolute;
+    left: 3%;
+    top: 5%;
+
+}
+
+#btnHome{
+    position: absolute;
+    width: 5.6em;
+    left: 78%;
+    top: 3%;
+    cursor: pointer;
+}
+
+#btnInstructions{
+    position: absolute;
+    width: 6em;
+    left: 88%;
+    top: 3%;
+    cursor: pointer;
+} 
+
+body{
+    height:100vh;
+    background-image: url("/images/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0px;
+}
+
+#bar {
+    position: absolute;
+    width: 12em;
+    height: 35em;
+    background-color: rgba(22, 16, 92, 0.5);
+    border-radius: 29px;
+    top: 22em;
+    margin-bottom: 22em;
+    left: 3em;
+}
+#avatar {
+    width: 8em;
+    height: 8em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    border-radius: 1.5em;
+    background-image: url("./images/vamo-a-calmarno.jpeg");
+}
+
+#name, #time, #puntaje {
+    font-family: "Press Start 2P";
+    font-size: 1em;
+    color: azure;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+#name{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+}
+#time1{
+    width: 4em;
+    height: 4em;
+    background-image: url("./images/time.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 6em;
+}
+#time{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 11em;
+}
+#puntaje{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 5em;
+    line-height: 2em;
+    margin-top: 16em;
+}
+
+.board {
+    position: relative;
+    left: 18em;
+    top: 10em;
+    right: 3em;
+    padding: 20px;
+    border-radius: 29px;
+    display: grid;
+    background: rgba(91, 117, 172, 0.5);
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: 9rem;
+    max-width: 56em;
+}
+
+.card {
+    position: relative;
+    background-color: transparent;
+    width: 8em;
+    height: 8em;
+    perspective: 1000px; 
+    transition: transform 0.8s;
+    cursor: pointer;
+} 
+
+.flip {
+    position: relative;
+    width: 8em;
+    height: 8em;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);   
+}
+.match {
+    position: relative;
+    width: 8em;
+    height: 8em;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);   
+}
+
+.cardFront, .cardBack {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    size: contain;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden; 
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cardBack {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-color: #994851;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 1px;
+    background-size: contain;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.image {
+    width:8em; 
+    height:8em; 
+    border-radius:50%;
+    padding: 1px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pkmn {
+    width: 6em;
+    height: 6em;
+    padding: 13%;
+}
+
+footer{
+    font-family: "Press Start 2P";
+    font-size: 0.8em;
+    color: rgba(255, 254, 254, 0.5);
+    margin-top: 25em;
+    padding:1em;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 992px) {
+    .barra {
+        height: 12em; 
+        background-color: #994851;
+        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    } 
+
+    #logo{
+        width: 19em;
+        position: absolute;
+        left: 3%;
+        top: 3%;
+    }
+    
+    #btnHome{
+        position: absolute;
+        width: 6.6em;
+        left: 75%;
+        top: 1%;
+        cursor: pointer;
+    }
+    
+    #btnInstructions{
+        position: absolute;
+        width: 7em;
+        left: 85%;
+        top: 1%;
+        cursor: pointer;
+    } 
+
+    .board {
+        position: relative;
+        left: 18em;
+        top: 10em;
+        padding: 20px;
+        border-radius: 29px;
+        display: grid;
+        background: rgba(91, 117, 172, 0.5);
+        grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+        grid-auto-flow: dense;
+        grid-auto-rows: 9rem;
+        max-width: 35em;
+    }
+
+    #bar {
+        position: absolute;
+        width: 12em;
+        height: 35em;
+        background-color: rgba(22, 16, 92, 0.5);
+        border-radius: 29px;
+        top: 22em;
+        margin-bottom: 22em;
+        left: 3em;
+    }
+  }
