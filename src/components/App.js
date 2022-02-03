@@ -8,7 +8,7 @@ const App = () => {
     function shuffle(){
 
       doublepoke.sort(() => Math.random() - 0.5);
-    };
+    }
       shuffle();
     
 //Primer div creado, padre de los siguientes, necesita return para aparecer dentro de root
@@ -46,7 +46,7 @@ const App = () => {
     cardImage.src = "images/pokeball.png";
     cardFront.appendChild(cardImage);
 
-};
+}
 
 //Return para que muestre el div como padre y aparezca en el html
   return board;

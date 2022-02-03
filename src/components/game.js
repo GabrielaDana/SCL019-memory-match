@@ -2,7 +2,7 @@
 const flip = document.getElementsByClassName("flip");
 let contador = 0;
 
-function checkCard(event){
+function checkCard(){
     let pkmnFlip = document.getElementsByClassName("pkmnFlip");
     
         if (pkmnFlip.length === 2){
@@ -22,12 +22,22 @@ function checkCard(event){
             pkmnFlip[1].classList.remove("pkmnFlip");
             pkmnFlip[0].classList.remove("pkmnFlip");   
         }
-        if(contador=== 9){
-            popUp();
+        if(contador === 9){
+
+            setTimeout(()=> 
+            (Swal.fire({
+                title: '¡FELICITACIONES!',
+                text: 'Eres un verdadero maestro Pokemon',
+                imageUrl: './images/oak.gif',
+                imageWidth: 400,
+                imageHeight: 250,
+            }
+            )),850);
+            
         }
     }
     
-    };
+    }
     
     function match() {
         const pkmnFlip = document.getElementsByClassName("pkmnFlip");
@@ -38,11 +48,6 @@ function checkCard(event){
     
         pkmnFlip[1].classList.remove("pkmnFlip");
         pkmnFlip[0].classList.remove("pkmnFlip");
-    
-        if (getElementsByClassName(match).length === 18){
-            alert("ganaste");
-        }
-    
-    };
+    }
 
     export {checkCard, match};
