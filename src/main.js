@@ -1,6 +1,6 @@
 
 import App from "./components/App.js";
-import {checkCard, match} from "./components/game.js";
+import {checkCard} from "./components/game.js";
 import botones from "./components/botones.js";
 import bar from "./components/bar.js";
 
