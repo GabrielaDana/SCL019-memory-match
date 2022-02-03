@@ -1,36 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-/* .card {
-    background-image: url("images/pokeball.png");
-    background-size: contain;
-    height: 160px;
-    width: 160px;
-    text-align: center;
-    font-family: "Press Start 2P";
-} */
-body{
-    margin: 0%;
-}
-h1 {
-    width: 340px;
-    height: 100px;
-    Top: 33px;
-    Left: 35px;
-    margin: 0%;
-    position: absolute;
-    background-image: url(./images/pokebola-pixel.png);
-    background-position-x: 45px;
-    background-position-y: 43px;
-    background-repeat: no-repeat;
-    font-family: "press start 2P";
-    font-size: 48px;
-    text-align: right;
-    color: #F0F42A;
-    -webkit-text-stroke: 1px #3C56B0;
-    text-shadow: -5px -4px 0px #3C56B0;
-    z-index: 1;
-}
 .boton{
+    background-image: url("images/start.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     margin-top: -80px;
     width: 140px;
@@ -39,159 +13,176 @@ h1 {
     margin-right: auto;
     right: 0;
     left: 0;
-    background: #994851;
     border: 2px solid #84343D;
     border-radius: 50%;
     box-sizing: border-box;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
-}
+    cursor: pointer;
+} 
 .circulo {
-    margin-top: -50px;
+    margin-top: -3em;
     margin-left: auto;
     margin-right: auto;
     right: 0;
     left: 0;
     position: absolute;
-    width: 300px;
-    height: 150px;
-    border-bottom-right-radius: 300px;
-    border-bottom-left-radius: 300px;
+    width: 18em;
+    height: 9em;       
+    border-bottom-right-radius: 18em;
+    border-bottom-left-radius: 18em;
     background: #994851;
     box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.3);
     z-index: -2;
 } 
 .circulo2 {
-    margin-top: -50px;
+
+    margin-top: -3em;
     margin-left: auto;
     margin-right: auto;
     right: 0;
     left: 0;
     position: absolute;
-    width: 300px;
-    height: 150px;
-    border-bottom-right-radius: 300px;
-    border-bottom-left-radius: 300px;
-    background: #994851; 
-}
+    width: 18em;
+    height: 9em;       
+    border-bottom-right-radius: 18em;
+    border-bottom-left-radius: 18em;
+    background: #994851;
+    
+} 
 .barra {
-    margin: 0%;
-    height: 179px;
-    top: 0%;
-    left: 0px;
-    right: 0px;
-    bottom: 845px;  
+    height: 12em; 
     background-color: #994851;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
     z-index: -1;
-}
-/*Liz*/
-/*.circulo2{
-    position: absolute;
-    border-radius: 50%;
-    background: #994851;
-    width: 150px;
-    height: 150px;
-    left: 680px;
-    top: 35px;
-    border: 2px solid #84343D;
-    box-sizing: border-box;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
-}
+} 
 
-#menu{
-    position: relative;
-    background: #994851;
-    max-width: 2000px;
-    padding: 3.8em;    
-}
-
-.circulo{
+#logo{
+    width: 19em;
     position: absolute;
-    border-radius: 50%;
-    background-color: #994851;
-    height: 200px;
-    width: 200px;
-    left: 652px;
-    top: 15px;
-}
- */
+    left: 3%;
+    top: 5%;
 
-/* #logo{
-    position: absolute;
-    left: 15px;
-    top: 3px;
-    max-width: 400px;
-}
-
-#btnStart{
-    position: absolute;
-    width: 120px;
-    height: 140px;
-    left: 700px;
-    top: 38px;
-    cursor: pointer;
 }
 
 #btnHome{
     position: absolute;
-    width: 111px;
-    height: 140px;
-    left: 1290px;
-    top: 20px;
-
-    max-width: 80px;
-    max-height:100px;
+    width: 5.6em;
+    left: 78%;
+    top: 3%;
     cursor: pointer;
 }
+
 #btnInstructions{
     position: absolute;
-    width: 120px;
-    height: 110px;
-    left: 1390px;
-    top: 20px;
-
-    max-width: 110px;
-    max-height:100px;
+    width: 6em;
+    left: 88%;
+    top: 3%;
     cursor: pointer;
-} */
-
+} 
 
 body{
+    height:100vh;
     background-image: url("/images/fondo.png");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     margin: 0px;
 }
 
-#root{
+#bar {
     position: absolute;
-    left: 266px;
-    top: 304px;
-    width: 60%;
-    height: 60%;
-    padding: 2px; 
+    width: 12em;
+    height: 35em;
+    background-color: rgba(22, 16, 92, 0.5);
+    border-radius: 29px;
+    top: 22em;
+    margin-bottom: 22em;
+    left: 3em;
+}
+#avatar {
+    width: 8em;
+    height: 8em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    border-radius: 1.5em;
+    background-image: url("./images/vamo-a-calmarno.jpeg");
+}
+
+#name, #time, #puntaje {
+    font-family: "Press Start 2P";
+    font-size: 1em;
+    color: azure;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+#name{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+}
+#time1{
+    width: 4em;
+    height: 4em;
+    background-image: url("./images/time.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 6em;
+}
+#time{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 11em;
+}
+#puntaje{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 5em;
+    line-height: 2em;
+    margin-top: 16em;
 }
 
 .board {
-    /* left: 266px;
-    top: 304px; */
     position: relative;
+    left: 18em;
+    top: 10em;
+    right: 3em;
     padding: 20px;
     border-radius: 29px;
     display: grid;
     background: rgba(91, 117, 172, 0.5);
-    grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     grid-auto-flow: dense;
-    grid-auto-rows: 11rem;
+    grid-auto-rows: 9rem;
+    max-width: 56em;
 }
 
 .card {
     position: relative;
     background-color: transparent;
-    width: 160px;
-    height: 160px;
+    width: 8em;
+    height: 8em;
     perspective: 1000px; 
     transition: transform 0.8s;
     cursor: pointer;
@@ -199,26 +190,25 @@ body{
 
 .flip {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 8em;
+    height: 8em;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     transform: rotateY(180deg);   
 }
 .match {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 8em;
+    height: 8em;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     transform: rotateY(180deg);   
 }
 
-
 .cardFront, .cardBack {
     position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 8em;
+    height: 8em;
     size: contain;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden; 
@@ -227,8 +217,8 @@ body{
 }
 
 .cardBack {
-    width: 160px;
-    height: 160px;
+    width: 8em;
+    height: 8em;
     border-radius: 50%;
     background-color: #994851;
     color: white;
@@ -239,14 +229,82 @@ body{
 }
 
 .image {
-    width:160px; 
-    height:160px; 
+    width:8em; 
+    height:8em; 
     border-radius:50%;
     padding: 1px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .pkmn {
-    width: 120px;
-    height: 120px;
+    width: 6em;
+    height: 6em;
     padding: 13%;
 }
+
+footer{
+    font-family: "Press Start 2P";
+    font-size: 0.8em;
+    color: rgba(255, 254, 254, 0.5);
+    margin-top: 25em;
+    padding:1em;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 992px) {
+    .barra {
+        height: 12em; 
+        background-color: #994851;
+        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    } 
+
+    #logo{
+        width: 19em;
+        position: absolute;
+        left: 3%;
+        top: 3%;
+    }
+    
+    #btnHome{
+        position: absolute;
+        width: 6.6em;
+        left: 75%;
+        top: 1%;
+        cursor: pointer;
+    }
+    
+    #btnInstructions{
+        position: absolute;
+        width: 7em;
+        left: 85%;
+        top: 1%;
+        cursor: pointer;
+    } 
+
+    .board {
+        position: relative;
+        left: 18em;
+        top: 10em;
+        padding: 20px;
+        border-radius: 29px;
+        display: grid;
+        background: rgba(91, 117, 172, 0.5);
+        grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+        grid-auto-flow: dense;
+        grid-auto-rows: 9rem;
+        max-width: 35em;
+    }
+
+    #bar {
+        position: absolute;
+        width: 12em;
+        height: 35em;
+        background-color: rgba(22, 16, 92, 0.5);
+        border-radius: 29px;
+        top: 22em;
+        margin-bottom: 22em;
+        left: 3em;
+    }
+  }

@@ -1,6 +1,5 @@
 
 import pokemon from '../data/pokemon/pokemon.js';
-console.log(pokemon);
 
 const App = () => {
   const poke = pokemon.items;
@@ -11,7 +10,6 @@ const App = () => {
       doublepoke.sort(() => Math.random() - 0.5);
     };
       shuffle();
-
     
 //Primer div creado, padre de los siguientes, necesita return para aparecer dentro de root
     const board = document.createElement("div");
