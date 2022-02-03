@@ -22,14 +22,18 @@ function checkCard(){
             pkmnFlip[1].classList.remove("pkmnFlip");
             pkmnFlip[0].classList.remove("pkmnFlip");   
         }
-        if(contador === 9){
-            Swal.fire({
+        if(contador === 1){
+
+            setTimeout(()=> 
+            (Swal.fire({
                 title: '¡FELICITACIONES!',
                 text: 'Eres un verdadero maestro Pokemon',
                 imageUrl: './images/oak.gif',
                 imageWidth: 400,
                 imageHeight: 250,
-            })
+            }
+            )),850);
+            
         }
     }
     
