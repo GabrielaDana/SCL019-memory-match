@@ -28,7 +28,7 @@ _Imagen logo diseñado en Adobe Photoshop 2020_.
 Para poder hacer una investigación de nuestro futuro usuario usamos la herramienta [_Forms_Google_](https://workspace.google.com/intl/es-419/products/forms/?utm_source=google&utm_medium=cpc&utm_campaign=latam-CL-all-es-dr-bkws-all-all-trial-e-dr-1011272-LUAC0011982&utm_content=text-ad-none-any-DEV_c-CRE_479425067880-ADGP_Hybrid%20%7C%20BKWS%20-%20MIX%20%7C%20Txt%20~%20Forms-KWID_43700057707270852-kwd-868999111187&utm_term=KW_crear%20google%20forms-ST_crear%20google%20forms&gclsrc=ds&gclsrc=ds) para llevar a cabo una encuesta la cual definió nuestras futuras historias de usuario. 
 Adjuntamos [_link_](https://docs.google.com/forms/d/1Xeudprij5jkHtjgOTzdaEC5NCCij1L_DHScL48brlCw/edit?ts=61e043f0) de formulario e imágenes de los resultados usados para nuestra investigación. 
 
-![(Resultado1)](src\images\imagesReadme\Resultados1.jpg)
+<img src= "./images/imagesReadme/Resultados1.jpg"></img>
 
 _Resultados de Encuesta a 40 potenciales usuarios_.
 
