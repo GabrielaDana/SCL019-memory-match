@@ -22,7 +22,7 @@ function checkCard(){
             pkmnFlip[1].classList.remove("pkmnFlip");
             pkmnFlip[0].classList.remove("pkmnFlip");   
         }
-        if(contador === 1){
+        if(contador === 9){
 
             setTimeout(()=> 
             (Swal.fire({
