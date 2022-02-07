@@ -2,6 +2,7 @@ const flip = document.getElementsByClassName("flip");
 let contador = 0;
 
 function checkCard() {
+  
   let pkmnFlip = document.getElementsByClassName("pkmnFlip");
 
   if (pkmnFlip.length === 2) {
