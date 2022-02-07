@@ -1,12 +1,11 @@
-
-import pokemon from '../data/pokemon/pokemon.js';
+import pokemon from "../data/pokemon/pokemon.js";
 
 const App = () => {
+  
   const poke = pokemon.items;
   var doublepoke = poke.concat(poke);
 
   function shuffle() {
-
     doublepoke.sort(() => Math.random() - 0.5);
   }
   shuffle();
@@ -16,8 +15,6 @@ const App = () => {
   board.className = "board";
 
   for (let i = 0; i < doublepoke.length; i++) {
-
-
     const card = document.createElement("div");
     card.className = "card";
     board.appendChild(card);
@@ -26,25 +23,21 @@ const App = () => {
     cardBack.className = "cardBack";
     card.appendChild(cardBack);
 
-
     const backImage = document.createElement("img");
     backImage.className = "pkmn";
     backImage.src = doublepoke[i].image;
     backImage.id = doublepoke[i].id;
     cardBack.appendChild(backImage);
 
-
     const cardFront = document.createElement("div");
     cardFront.className = "cardFront";
     card.appendChild(cardFront);
-
 
     const cardImage = document.createElement("img");
     cardImage.alt = "pokeball";
     cardImage.className = "image";
     cardImage.src = "images/pokeball.png";
     cardFront.appendChild(cardImage);
-
   }
 
   //Return para que muestre el div como padre y aparezca en el html
