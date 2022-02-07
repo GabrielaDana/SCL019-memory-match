@@ -36,7 +36,6 @@ const App = () => {
 
     const cardFront = document.createElement("div");
     cardFront.className = "cardFront";
-    cardFront.setAttribute = "doublepoke.length";
     card.appendChild(cardFront);
 
 
